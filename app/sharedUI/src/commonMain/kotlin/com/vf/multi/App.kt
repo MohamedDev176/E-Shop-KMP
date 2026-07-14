@@ -2,6 +2,7 @@ package com.vf.multi
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.vf.multi.screen.EcommerceHomePage
 import com.vf.multi.screen.ForgotPasswordScreen
 import com.vf.multi.theme.AppTheme
 
@@ -9,6 +10,6 @@ import com.vf.multi.theme.AppTheme
 @Preview
 fun App() {
     AppTheme {
-        ForgotPasswordScreen()
+        EcommerceHomePage()
     }
 }

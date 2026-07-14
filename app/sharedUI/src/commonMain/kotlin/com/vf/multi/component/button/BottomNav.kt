@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -29,11 +30,9 @@ internal fun BottomNav() {
         val items = listOf("Home", "Discover", "Cart", "Profile")
         items.forEachIndexed { index, item ->
             Column(
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxHeight(),
+                modifier = Modifier.weight(1f).fillMaxHeight(),
                 horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center,
+                verticalArrangement = Arrangement.Center
             ) {
                 Text(
                     text = item,
@@ -45,3 +44,7 @@ internal fun BottomNav() {
         }
     }
 }
+
+@Preview
+@Composable
+private fun BottomNavPreview() { BottomNav() }
