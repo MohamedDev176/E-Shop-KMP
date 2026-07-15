@@ -41,8 +41,8 @@ internal fun PrimaryButton(
     }
 }
 
-@Composable
 @Preview
+@Composable
 fun PrimaryButtonPreview() {
     PrimaryButton(text = "Click Me", onClick = {})
 }
